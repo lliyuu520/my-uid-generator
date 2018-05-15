@@ -1,0 +1,15 @@
+server:
+  port: 6789
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useSSL=false
+    username: root
+    password: root123456
+    tomcat:
+      max-active: 2
+  jpa:
+    properties:
+      hibernate.hbm2ddl.auto: update
+      hibernate.naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+
